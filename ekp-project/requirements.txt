@@ -1,0 +1,11 @@
+fastapi
+qdrant-client
+pydantic
+numpy
+scikit-learn
+torch
+sentence-transformers
+llama-index
+pytest
+uvicorn
+Ollama

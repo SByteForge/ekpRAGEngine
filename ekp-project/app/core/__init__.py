@@ -1,0 +1,1 @@
+# This file initializes the core package, which contains shared configurations and utilities.

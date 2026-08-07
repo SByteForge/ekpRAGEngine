@@ -1,0 +1,1 @@
+# This file initializes the API package, allowing for the organization of routes and related functionality.
