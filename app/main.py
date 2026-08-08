@@ -4,11 +4,13 @@ from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.core.db import get_db, engine, Base
 from app.core import db_models  # noqa: F401
-from app.core.db_models import Document, Tenant, Conversation, Message
+from app.core.db_models import Document, Tenant, Conversation, Message, User
 from app.ingestion.pipeline import ingest_document
 from app.retrieval.hybrid import hybrid_retrieve
 from app.generation.pipeline import answer_question
  
+from app.tenancy.auth import generate_api_key, hash_api_key, get_current_user, require_tenant_match
+
 app = FastAPI(title="Enterprise Knowledge Platform", version="0.1.0")
 UPLOAD_DIR = Path("data/corpus")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
@@ -34,11 +36,32 @@ def create_tenant(name: str = Form(...), db: Session = Depends(get_db)):
     db.commit()
     db.refresh(tenant)
     return {"id": tenant.id, "name": tenant.name, "existed": False}
+
+
+@app.post("/users")
+def create_user(tenant_id: str = Form(...), email: str = Form(...), db: Session = Depends(get_db)):
+    """Issues a new API key. Raw key shown only once, only the hash is stored."""
+    target_tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
+    if not target_tenant:
+        raise HTTPException(status_code=404, detail="Unknown tenant_id")
+    existing = db.query(User).filter(User.email == email).first()
+    if existing:
+        raise HTTPException(status_code=409, detail="A user with this email already exists")
+    raw_key = generate_api_key()
+    user = User(tenant_id=tenant_id, email=email, hashed_api_key=hash_api_key(raw_key))
+    db.add(user)
+    db.commit()
+    db.refresh(user)
+    return {
+        "user_id": user.id, "tenant_id": user.tenant_id, "email": user.email,
+        "api_key": raw_key, "warning": "Save this key now - it will not be shown again.",
+    }
  
  
 @app.post("/documents/ingest")
 async def ingest(tenant_id: str = Form(...), source_category: str = Form(None),
-                  file: UploadFile = File(...), db: Session = Depends(get_db)):
+                  file: UploadFile = File(...), db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    require_tenant_match(current_user, tenant_id)
     tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
     if not tenant:
         raise HTTPException(status_code=404, detail="Unknown tenant_id")
@@ -69,8 +92,9 @@ def get_document(document_id: str, db: Session = Depends(get_db)):
             "n_chunks": doc.n_chunks, "error_reason": doc.error_reason}
 
 @app.post("/search")
-def search(tenant_id: str = Form(...), query: str = Form(...), db: Session = Depends(get_db)):
+def search(tenant_id: str = Form(...), query: str = Form(...), db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     """Standalone retrieval test endpoint - Phase 5."""
+    require_tenant_match(current_user, tenant_id)
     tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
     if not tenant:
         raise HTTPException(status_code=404, detail="Unknown tenant_id")
@@ -87,8 +111,9 @@ def search(tenant_id: str = Form(...), query: str = Form(...), db: Session = Dep
 
 @app.post("/chat")
 def chat(tenant_id: str = Form(...), question: str = Form(...),
-         conversation_id: str = Form(None), db: Session = Depends(get_db)):
+         conversation_id: str = Form(None), db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     """Full RAG endpoint - Phase 6."""
+    require_tenant_match(current_user, tenant_id)
     tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
     if not tenant:
         raise HTTPException(status_code=404, detail="Unknown tenant_id")
