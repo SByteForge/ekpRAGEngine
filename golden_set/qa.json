@@ -1,30 +1,54 @@
 [
   {
     "id": "q1",
-    "question": "What safety rule requires employees at Levine Academy to report any unsafe conditions to their supervisor?",
+    "question": "How many sick days or personal days are allowed for full time teachers during the 2021/2022 school year?",
+    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
+    "expected_filename": "Employee Handbook 2021-2022.pdf",
+    "expected_page_number": 28,
+    "source_excerpt": "28 | P a g e  \n matters that may emerge that are unavoidable, that must be addressed, and/or that cannot be switched t o \nanother date when school is not in session.  Person al days are also not an entitlement. These days are  made \navailable for your use in order to address personal  business that "
+  },
+  {
+    "id": "q2",
+    "question": "What religious thought and practice does Levine Academy adhere to?",
+    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
+    "expected_filename": "Employee Handbook 2021-2022.pdf",
+    "expected_page_number": 5,
+    "source_excerpt": "ence in General Studies and Jewish Studies fo r students in Preschool (3 months) through Eighth G rade.    \nLevine Academy is an inclusive, dynamic community c omprising the full spectrum of Jewish affiliations,  the \nunaffiliated, many nationalities, and a diversity o f socio-economic backgrounds. "
+  },
+  {
+    "id": "q3",
+    "question": "What items are prohibited for employees to possess at Ann and Nate Levine Academy?",
+    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
+    "expected_filename": "Employee Handbook 2021-2022.pdf",
+    "expected_page_number": 43,
+    "source_excerpt": "43 | P a g e  \n sensitivity of the information requested and has de veloped confidentiality procedures that recognize a nd respect \nthe privacy of the reporting employee.    \n  \n \nWeapons  \n \nDespite some laws (Concealed Handgun License, CHL) that allow people to carry firearms in public, Ann and \nN"
+  },
+  {
+    "id": "q4",
+    "question": "What safety action should employees take in the case of an accident that results in injury, regardless of its significance?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
     "expected_page_number": 37,
     "source_excerpt": "37 | P a g e  \n Each employee is expected to obey safety rules and exercise caution and common sense in all work activ ities.  \nEmployees must immediately report any unsafe condit ions to their supervisor.  Employees who violate sa fety \nstandards, cause hazardous or dangerous situations,  or fail t"
   },
   {
-    "id": "q2",
-    "question": "What was the name under which Ann & Nate Levine Academy operated before it became independent in 1997?",
+    "id": "q5",
+    "question": "What are the expectations for a Regular Full-Time Pre-School Teacher regarding being on campus?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 5,
-    "source_excerpt": "5 | P a g e  \n INTRODUCTION  \n \nThis Handbook is designed to acquaint you with Ann & Nate Levine Academy and provide you with informat ion \nabout working conditions, benefits, and policies af fecting your employment.  \nThe information contained in this Handbook applies to all employees of Levine Aca"
+    "expected_page_number": 7,
+    "source_excerpt": "time, even though they may be regularly scheduled d uring their temporary assignments.  \n \no Regular Full-Time Teacher: An employee who regularl y teaches in the K8 division a minimum of 30 \nstudent-contact hours per week.  Full-Time Teachers  are expected to be on campus from 7:30am until \nafter th"
   },
   {
-    "id": "q3",
-    "question": "What are the sections in the document titled \"Compensation\" and \"Time Off Policies\"?",
+    "id": "q6",
+    "question": "What foods served after lunch at the school must be exclusively Pareve certified kosher with no meat nor dairy?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 3,
-    "source_excerpt": "3 | P a g e  \n     Community Expectation:  \nA Positive Learning Environment   19 \n    Community Standard: \n     A Respect for Others    19 \n    Reporting Incidents      19 \n    School Jurisdiction     20 \n    Technology Misconduct     20 \n    Examples of Discriminatory Misconduct   20 \n    Explanati"
+    "expected_page_number": 24,
+    "source_excerpt": "24 | P a g e  \n 1.  Food may only be brought into school from a Kosher supervised restaurant or items may be purchased \nfrom a grocery store if the item contains a hechshe r symbol.  \n2.  All Food from home or from a kosher restaurant must  be either Parve or Dairy. (not meat)  \n3.  Do to personal l"
   },
   {
-    "id": "q4",
+    "id": "q7",
     "question": "What is the maximum number of days for paid bereavement leave when a death occurs in an employee's immediate family?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
@@ -32,91 +56,67 @@
     "source_excerpt": " following Winter Break o r \nPassover Break, on the day before or the day after all other national or religious holidays, or to wor k at \nanother job.  Also, no more than two members of the  teaching staff in a division (ECC or K8) may be on  \npersonal leave at the same time, unless such person al l"
   },
   {
-    "id": "q5",
-    "question": "What happens if an employee's premium payment for Levine Academy's group health plan is more than 30 days late during family and medical leave?",
-    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
-    "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 32,
-    "source_excerpt": "32 | P a g e  \n Coverage of the employee under Levine Academy\u2019s ben efit plans will be continued for the duration of th e \nemployee\u2019s leave at the level and under the conditi ons that coverage would have been provided if the e mployee \nhad continued in active employment continuously for  the duratio"
-  },
-  {
-    "id": "q6",
-    "question": "What are the regular work hours (excluding lunch breaks) for non-exempt employees at Levine Academy?",
-    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
-    "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 10,
-    "source_excerpt": ") Staff Employees  \nThe core Levine Academy office hours are 8:00 a.m. to 4:00 p.m., Monday through Friday.  \nThe timing of lunch breaks is subject to approval b y the Head of School to assure proper office covera ge.     \nIndividual work schedules may be established with t he Head of School or othe"
-  },
-  {
-    "id": "q7",
-    "question": "What is the policy regarding hiring relatives at Levine Academy?",
-    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
-    "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 17,
-    "source_excerpt": "17 | P a g e  \n Hiring of Relatives  \n  \nSelection, assignment and appraisal of every employ ee should be as objective as possible.  Where relat ives are \ninvolved, it is difficult to appear objective, even  under the most desirable situations. Therefore, Le vine Academy \nwill only hire relatives of"
-  },
-  {
     "id": "q8",
-    "question": "What types of technology misconduct can result in school consequences according to this policy?",
+    "question": "What action should be taken by an employee who becomes ill while at work or must leave the office before the end of the workday?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 20,
-    "source_excerpt": "20 | P a g e  \n  \n- Any type of communication that results in distracti on/disruption in the school environment, even if th e \ncommunication originally occurred off campus and/or  not during school hours, will result in a school \nconsequence. \n- This policy includes, but is not limited to, online  c"
+    "expected_page_number": 18,
+    "source_excerpt": "18 | P a g e  \n message on a supervisor\u2019s voice mail or to send an email, except in extreme emergencies.  In the case of leaving \na voice-mail message, a follow-up call must be made  later that day.  Levine Academy phone number is 97 2-248-\n3032.  Upon return to work fill out an absence repo rt whic"
   },
   {
     "id": "q9",
-    "question": "What is the approved exception for cell phone usage during the academic day at Levine Academy?",
+    "question": "What are the consequences for unauthorized access or misuse of the school's network or systems?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 24,
-    "source_excerpt": "computers, and iPads that Levine Academy provides f or your use, should only be used for school busines s and for \nstudents as a learning tool.   These items are the property of Levine Academy.  The setup and installa tion of all \nhardware, operating systems and software is the sol e responsibility "
+    "expected_page_number": 25,
+    "source_excerpt": " use their login or password for th e network, e-\nmail or any other system. The only exception is on rare occasions when a member of the IT staff may ne ed the \nlogin or password to access or troubleshoot a softw are or system problem.   \n \n \nInternet Access and Use   \n \nInternet use, on the school\u2019"
   },
   {
     "id": "q10",
-    "question": "What types of fish are considered kosher according to the Kashrut?",
+    "question": "What are the factors that determine an increase in compensation at Levine Academy?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 24,
-    "source_excerpt": "24 | P a g e  \n 1.  Food may only be brought into school from a Kosher supervised restaurant or items may be purchased \nfrom a grocery store if the item contains a hechshe r symbol.  \n2.  All Food from home or from a kosher restaurant must  be either Parve or Dairy. (not meat)  \n3.  Do to personal l"
+    "expected_page_number": 26,
+    "source_excerpt": "26 | P a g e  \n work systems or within the school network. If you l eave the school for any reason, Levine Academy will  require \nthat you return the equipment on your last day of w ork. \n \nLevine Academy provides email addresses for its emp loyees and uses email to communicate important scho ol \nbu"
   },
   {
     "id": "q11",
-    "question": "What are the examples of \"special\" personal days?",
+    "question": "What are the roles of the Information Center and the Crisis Management Team in a school crisis situation?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 28,
-    "source_excerpt": " personal leave at the same tim e.  \n\u2022 There are other leave provisions  that are spelled out in the Employee Manual, such as maternity leave, \nbereavement leave, and other leave provisions that may fall outside the standard allotment of paid tim e \noff.  \n \nSick Days  \nSick days may be used for any"
+    "expected_page_number": 38,
+    "source_excerpt": "38 | P a g e  \n The role of the Crisis Team is to assess the crisis  and generate a plan that meets the emotional and a cademic \nneeds of the school community via the coordination of counseling services and the alteration of the ac ademic \nschedule.   \n \nInformation Center  \n    \nThe role of the Inf"
   },
   {
     "id": "q12",
-    "question": "What qualifying events allow employees or their qualified beneficiaries to continue health insurance coverage under Levine Academy's plan according to COBRA?",
+    "question": "What happens to prohibited materials found in an employee's possession during an inspection or search?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 34,
-    "source_excerpt": "34 | P a g e  \n   \nThe health insurance plan at Levine Academy offers employees and their dependents access to medical an d \ndental insurance benefits and vision care discounts . Regular full-time and part-time employees who wor k an \naverage of 30 hours a week over 52 weeks are eligib le to partici"
+    "expected_page_number": 42,
+    "source_excerpt": "42 | P a g e  \n   \nVehicles, desks and lockers may be provided for the  convenience of employees but remains the sole prop erty of \nthe school.  Unauthorized storage of school propert y in desks and lockers is not permitted.  Only scho ol provided \nlocks may be used to secure desks and lockers.  \n  "
   },
   {
     "id": "q13",
-    "question": "What are the costs for coverage under COBRA at Levine Academy's group rate for an employee or beneficiary?",
+    "question": "What is a condition for continued employment at Levine Academy regarding searches?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 34,
-    "source_excerpt": "  a reduction in an employee\u2019s hours or leave of abs ence, \ndivorce or legal separation and a dependent child n o longer meeting eligibility requirements.  \n  \nUnder COBRA, the employee or beneficiary pays the f ull cost of coverage at Levine Academy\u2019s group rate s plus \nan administration fee. Levin"
+    "expected_page_number": 41,
+    "source_excerpt": " ess that employees may use are always the property of \nLevine Academy. Therefore, we reserve the right to monitor computer activities. We also reserve the ri ght to \nretrieve and read any computer files or data that a re composed, sent, or received through Internet con nections or \nstored in our co"
   },
   {
     "id": "q14",
-    "question": "What should materials used in administering first aid be discarded into, according to the school's policy?",
-    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
-    "expected_filename": "Employee Handbook 2021-2022.pdf",
-    "expected_page_number": 40,
-    "source_excerpt": ".  This plan is reviewed with all empl oyees who are in positions that have been identifie d at risk of \nexposure to Blood borne pathogens. The following is  a summary of procedures to follow when first aid o r cleanup \nof fluids becomes necessary.    \n   \nAny materials, including latex gloves and C"
-  },
-  {
-    "id": "q15",
-    "question": "What is the maximum duration for a general Leave of Absence (LOA), excluding military leave, in the document?",
+    "question": "What is the maximum length of a non-military Leave of Absence before employment termination?",
     "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
     "expected_filename": "Employee Handbook 2021-2022.pdf",
     "expected_page_number": 30,
     "source_excerpt": " end dates and any other information t hat may be relevant to the evaluation of the leave \nrequest. The School will consider the following pri or to giving approval:  \n\u2022 Can arrangements be made for adequate coverage duri ng the absence?  \n\u2022 Are the reasons justified? \n\u2022 Does the employee\u2019s work per"
+  },
+  {
+    "id": "q15",
+    "question": "What happens if an employee's premium payment is more than 30 days late during their leave?",
+    "expected_document_id": "2bed5a35-5374-4b0c-9cb3-4b263c7396dd",
+    "expected_filename": "Employee Handbook 2021-2022.pdf",
+    "expected_page_number": 32,
+    "source_excerpt": "32 | P a g e  \n Coverage of the employee under Levine Academy\u2019s ben efit plans will be continued for the duration of th e \nemployee\u2019s leave at the level and under the conditi ons that coverage would have been provided if the e mployee \nhad continued in active employment continuously for  the duratio"
   }
 ]

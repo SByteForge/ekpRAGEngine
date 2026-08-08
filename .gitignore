@@ -26,3 +26,8 @@ golden_set/eval_report_*.json
 
 .vscode/
 .idea/
+
+apply_phase3&4.sh
+apply_Phase6.sh
+apply_Phase7.sh
+apply_Phrase5.sh

@@ -36,7 +36,7 @@ def _extract_json(text: str) -> dict:
 
 
 def judge_faithfulness(question: str, answer: str, source_chunks: List[dict]) -> dict:
-    sources_text = "\n\n".join(f"[{i+1}] {c['text'][:400]}" for i, c in enumerate(source_chunks))
+    sources_text = "\n\n".join(f"[{i+1}] {c['text']}" for i, c in enumerate(source_chunks))
     prompt = JUDGE_PROMPT_TEMPLATE.format(sources=sources_text, question=question, answer=answer)
     try:
         response = _client.generate(model=settings.ollama_judge_model, prompt=prompt, stream=False)
