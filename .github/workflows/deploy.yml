@@ -1,0 +1,19 @@
+name: Deploy (local)
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  deploy:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: self-hosted
+
+    steps:
+      - name: Run local deploy script with health check + rollback
+        run: |
+          cd ${{ github.workspace }}
+          chmod +x deploy_local.sh
+          ./deploy_local.sh

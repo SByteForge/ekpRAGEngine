@@ -33,6 +33,7 @@ services:
       retries: 10
  
   app:
+    image: ${IMAGE_TAG:-ekp-app:latest}
     build:
       context: .
       dockerfile: Dockerfile
